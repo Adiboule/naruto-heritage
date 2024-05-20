@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes Naruto à Vendre</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+            .card img {
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .card h3 {
+                margin: 15px 0;
+                font-size: 1.2em;
+            }
+
+            .card p {
+                margin: 0 0 15px 0;
+                font-size: 0.9em;
+                color: #777;
+            }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2em;
+            color: #555;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+            .pagination button {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                padding: 10px 20px;
+                margin: 0 5px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.2s;
+            }
+
+                .pagination button:hover {
+                    background-color: #ddd;
+                }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Cartes Naruto à Vendre</h1>
+    </div>
+
+    <div id="page1" class="page">
+        <div class="section-title">Page 1</div>
+        <div class="card-container">
+            <!-- Cartes NRCC-R de 1 à 14 -->
+            <div class="card">
+                <img src="https://example.com/image1.jpg" alt="NRCC-R-001">
+                <h3>NRCC-R-001</h3>
+                <p>VERSION NOBLE</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/image2.jpg" alt="NRCC-R-002">
+                <h3>NRCC-R-002</h3>
+                <p>VERSION NOBLE</p>
+            </div>
+            <!-- Ajoutez les cartes de 1 à 14 ici -->
+        </div>
+    </div>
+
+    <div id="page2" class="page" style="display:none;">
+        <div class="section-title">Page 2</div>
+        <div class="card-container">
+            <!-- Cartes NRCC-R de 15 à 28 -->
+            <div class="card">
+                <img src="https://example.com/image15.jpg" alt="NRCC-R-015">
+                <h3>NRCC-R-015</h3>
+                <p>VERSION NOBLE</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/image16.jpg" alt="NRCC-R-016">
+                <h3>NRCC-R-016</h3>
+                <p>VERSION NOBLE</p>
+            </div>
+            <!-- Ajoutez les cartes de 15 à 28 ici -->
+        </div>
+    </div>
+
+    <div id="page3" class="page" style="display:none;">
+        <div class="section-title">Page 3</div>
+        <div class="card-container">
+            <!-- Cartes NRCC-R de 29 à 43 -->
+            <div class="card">
+                <img src="https://example.com/image29.jpg" alt="NRCC-R-029">
+                <h3>NRCC-R-029</h3>
+                <p>VERSION NOBLE</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/image30.jpg" alt="NRCC-R-030">
+                <h3>NRCC-R-030</h3>
+                <p>VERSION NOBLE</p>
+            </div>
+            <!-- Ajoutez les cartes de 29 à 43 ici -->
+        </div>
+    </div>
+
+    <div class="pagination">
+        <button onclick="window.location.href='R.html'">Carte R</button>
+        <button onclick="window.location.href='SR.html'">Carte SR</button>
+        <button onclick="window.location.href='SSR.html'">Carte SSR</button>
+        <button onclick="window.location.href='UR.html'">Carte UR</button>
+        <button onclick="window.location.href='MR.html'">Carte MR</button>
+        <button onclick="window.location.href='SP.html'">Carte SP</button>
+        <button onclick="window.location.href='XR.html'">Carte XR</button>
+    </div>
+
+    <script>function showPage(pageId) {
+            var pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }</script>
+</body>
+
+</html>
